@@ -29,7 +29,7 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
-                        "mailto", "vishnuvathsan@gmail.com", null));
+                        "mailto", "aslan@uomcse.lk", null));
                 emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Device Registration Data");
                 emailIntent.putExtra(Intent.EXTRA_TEXT, registrationData.toString());
                 startActivity(Intent.createChooser(emailIntent, "Send email..."));
